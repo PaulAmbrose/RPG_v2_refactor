@@ -13,8 +13,21 @@ If your number is higher than the monster you take 10% off its suit integrity.
 If the monsters number is higher he takes of 10% of your suit integrity.
 Monster is destroyed when intergrity is 0. Game ends when suit integrity or oxygen is 0.
 
+------------------------
 Rooms:
 
 Room7 Room8 Room9
 Room4 Room5 Room6
 Room1 Room2 Room3
+
+------------------------
+
+>Game Actions
+
+The player moves to locations
+The player needs to see if the escape pod is in the room they entered
+The player must fight monsters
+
+>>Nouns
+
+Player, location, escape pod, rooms, monster
