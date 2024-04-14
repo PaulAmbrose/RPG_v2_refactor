@@ -1,0 +1,20 @@
+Game Design
+
+On a space station where there is 9 rooms. One room will randomly have an escape pod.
+You will start in a random room.
+Each time you move rooms you lose 10% of your oxygen.
+You need to find the escape pod before your oxygen runs out or you are destroyed by a monster.
+
+In three random rooms there is a monster placed.
+When you go into a room where there is a monster you have to fight the monster.
+You fight the monster by firing your gun.
+Each time you fire your gun you randomly generate a number, and the monster also generates a random number.
+If your number is higher than the monster you take 10% off its suit integrity.
+If the monsters number is higher he takes of 10% of your suit integrity.
+Monster is destroyed when intergrity is 0. Game ends when suit integrity or oxygen is 0.
+
+Rooms:
+
+Room7 Room8 Room9
+Room4 Room5 Room6
+Room1 Room2 Room3
