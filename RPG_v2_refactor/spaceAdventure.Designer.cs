@@ -53,9 +53,9 @@
             this.OxygenLabel.AutoSize = true;
             this.OxygenLabel.Location = new System.Drawing.Point(531, 559);
             this.OxygenLabel.Name = "OxygenLabel";
-            this.OxygenLabel.Size = new System.Drawing.Size(72, 13);
+            this.OxygenLabel.Size = new System.Drawing.Size(89, 13);
             this.OxygenLabel.TabIndex = 1;
-            this.OxygenLabel.Text = "Oxygen Level";
+            this.OxygenLabel.Text = "Oxygen Level (%)";
             // 
             // suitIntegrityLabel
             // 
@@ -126,7 +126,7 @@
             this.actionWindow.Size = new System.Drawing.Size(585, 20);
             this.actionWindow.TabIndex = 9;
             // 
-            // Form1
+            // spaceAdventure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,7 +141,7 @@
             this.Controls.Add(this.suitIntegrity);
             this.Controls.Add(this.OxygenLabel);
             this.Controls.Add(this.oxygenLevel);
-            this.Name = "Form1";
+            this.Name = "spaceAdventure";
             this.Text = "SpaceAdventure_Refactor";
             this.ResumeLayout(false);
             this.PerformLayout();

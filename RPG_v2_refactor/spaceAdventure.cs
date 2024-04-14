@@ -24,8 +24,8 @@ namespace RPG_v2_refactor
             _PlayerNumber1.inFight = false;
             _PlayerNumber1.withEscapePod = false;
 
-            oxygenLevel.Text = _PlayerNumber1.OxygenLevel.ToString();
-            suitIntegrity.Text = _PlayerNumber1.suitIntegrity.ToString();
+            oxygenLevel.Text = _PlayerNumber1.OxygenLevel.ToString() + "%";
+            suitIntegrity.Text = _PlayerNumber1.suitIntegrity.ToString() + "%";
         }
     }
 }
