@@ -53,9 +53,9 @@
             this.OxygenLabel.AutoSize = true;
             this.OxygenLabel.Location = new System.Drawing.Point(531, 559);
             this.OxygenLabel.Name = "OxygenLabel";
-            this.OxygenLabel.Size = new System.Drawing.Size(89, 13);
+            this.OxygenLabel.Size = new System.Drawing.Size(72, 13);
             this.OxygenLabel.TabIndex = 1;
-            this.OxygenLabel.Text = "Oxygen Level (%)";
+            this.OxygenLabel.Text = "Oxygen Level";
             // 
             // suitIntegrityLabel
             // 
