@@ -1,6 +1,6 @@
 ﻿namespace RPG_v2_refactor
 {
-    partial class Form1
+    partial class spaceAdventure
     {
         /// <summary>
         /// Required designer variable.

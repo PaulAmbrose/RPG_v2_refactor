@@ -12,7 +12,7 @@ namespace engine
         public int OxygenLevel { get; set; }
         public int suitIntegrity { get; set; }
         public string currentLocation { get; set; }
-        public bool inAFight { get; set; }
-        public bool withTheEscapePod { get; set; }
+        public bool inFight { get; set; }
+        public bool withEscapePod { get; set; }
     }
 }

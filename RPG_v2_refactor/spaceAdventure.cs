@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using engine;
 
 namespace RPG_v2_refactor
 {
-    public partial class Form1 : Form
+    public partial class spaceAdventure : Form
     {
-        public Form1()
+        private Player _player;
+        public spaceAdventure()
         {
             InitializeComponent();
         }
