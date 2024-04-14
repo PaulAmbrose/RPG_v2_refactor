@@ -31,3 +31,11 @@ The player must fight monsters
 >>Nouns
 
 Player, location, escape pod, rooms, monster
+
+
+player class
+>>Oxygen Level
+>>Suit Integrity
+>>Current Location
+>>In a fight? y/N
+>>With the escape pod? y/n
