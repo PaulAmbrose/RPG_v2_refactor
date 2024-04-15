@@ -11,5 +11,11 @@ namespace engine
         public int MonsterSuitIntegrity { get; set; }
 
         public string RoomLocation { get; set; }
+
+        public Monster(int monsterSuitIntegrity, string roomLocation)
+        {
+            MonsterSuitIntegrity = monsterSuitIntegrity;
+            RoomLocation = roomLocation;
+        }
     }
 }
