@@ -10,9 +10,18 @@ namespace engine
     public class Player
     {
         public int OxygenLevel { get; set; }
-        public int suitIntegrity { get; set; }
-        public string currentLocation { get; set; }
-        public bool inFight { get; set; }
-        public bool withEscapePod { get; set; }
+        public int SuitIntegrity { get; set; }
+        public string CurrentLocation { get; set; }
+        public bool InFight { get; set; }
+        public bool WithEscapePod { get; set; }
+
+        public Player(int oxygenLevel, int suitIntegrity, string currentLocation, bool inFight, bool withEscapePod)
+        {
+            OxygenLevel = oxygenLevel;
+            SuitIntegrity = suitIntegrity;
+            CurrentLocation = currentLocation;
+            InFight = inFight;
+            WithEscapePod = withEscapePod;
+        }
     }
 }

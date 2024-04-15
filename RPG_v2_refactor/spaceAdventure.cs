@@ -17,15 +17,10 @@ namespace RPG_v2_refactor
         public spaceAdventure()
         {
             InitializeComponent();
-            _PlayerNumber1 = new Player();
-
-            _PlayerNumber1.OxygenLevel = 100;
-            _PlayerNumber1.suitIntegrity = 100;
-            _PlayerNumber1.inFight = false;
-            _PlayerNumber1.withEscapePod = false;
+            _PlayerNumber1 = new Player(100, 100, "Room1", false, false);
 
             oxygenLevel.Text = _PlayerNumber1.OxygenLevel.ToString() + "%";
-            suitIntegrity.Text = _PlayerNumber1.suitIntegrity.ToString() + "%";
+            suitIntegrity.Text = _PlayerNumber1.SuitIntegrity.ToString() + "%";
         }
     }
 }
