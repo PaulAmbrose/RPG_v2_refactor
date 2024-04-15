@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace engine
 {
-    internal class Monster
+    public class Monster
     {
         public int MonsterSuitIntegrity { get; set; }
 
-        public string RoomLocation { get; set; }
-
-        public Monster(int monsterSuitIntegrity, string roomLocation)
+        public Monster(int monsterSuitIntegrity)
         {
             MonsterSuitIntegrity = monsterSuitIntegrity;
-            RoomLocation = roomLocation;
         }
     }
 }
