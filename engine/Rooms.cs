@@ -9,8 +9,14 @@ namespace engine
     public class Rooms
     {
         public string RoomName { get; set; }
-        public bool isMonsterPresent { get; set; }
-        public bool isEscapePodPresent { get; set; }
+        public bool IsMonsterPresent { get; set; }
+        public bool IsEscapePodPresent { get; set; }
 
+        public Rooms(string roomName, bool isMonsterPresent, bool isEscapePodPresent)
+        {
+            RoomName = roomName;
+            IsMonsterPresent = isMonsterPresent;
+            IsEscapePodPresent = isEscapePodPresent;
+        }
     }
 }
