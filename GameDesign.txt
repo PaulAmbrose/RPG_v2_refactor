@@ -30,7 +30,7 @@ The player must fight monsters
 
 >>Nouns
 
-Player, location, escape pod, rooms, monster
+Player, location, monster
 
 
 player class
@@ -39,3 +39,12 @@ player class
 >>Current Location
 >>In a fight? y/N
 >>With the escape pod? y/n
+
+rooms class
+>>Room name
+>>Monster Present? y/n
+>>Escape pod present? y/n
+
+monster class
+>>suit Integrity
+>>Location
