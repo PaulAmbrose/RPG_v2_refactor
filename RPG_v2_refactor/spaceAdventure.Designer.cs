@@ -37,7 +37,7 @@
             this.rightButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
             this.leftButton = new System.Windows.Forms.Button();
-            this.actionWindow = new System.Windows.Forms.TextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // oxygenLevel
@@ -119,19 +119,20 @@
             this.leftButton.Text = "left";
             this.leftButton.UseVisualStyleBackColor = true;
             // 
-            // actionWindow
+            // richTextBox1
             // 
-            this.actionWindow.Location = new System.Drawing.Point(48, 39);
-            this.actionWindow.Name = "actionWindow";
-            this.actionWindow.Size = new System.Drawing.Size(585, 20);
-            this.actionWindow.TabIndex = 9;
+            this.richTextBox1.Location = new System.Drawing.Point(48, 38);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(585, 295);
+            this.richTextBox1.TabIndex = 10;
+            this.richTextBox1.Text = "";
             // 
             // spaceAdventure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 651);
-            this.Controls.Add(this.actionWindow);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.leftButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.rightButton);
@@ -159,7 +160,7 @@
         private System.Windows.Forms.Button rightButton;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button leftButton;
-        private System.Windows.Forms.TextBox actionWindow;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
