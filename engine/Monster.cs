@@ -9,10 +9,12 @@ namespace engine
     public class Monster
     {
         public int MonsterSuitIntegrity { get; set; }
+        public int MonsterName { get; set; }
 
-        public Monster(int monsterSuitIntegrity)
+        public Monster(int monsterSuitIntegrity, int monsterName)
         {
             MonsterSuitIntegrity = monsterSuitIntegrity;
+            MonsterName = monsterName;
         }
     }
 }
