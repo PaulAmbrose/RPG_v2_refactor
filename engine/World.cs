@@ -9,14 +9,13 @@ namespace engine
     public static class World
     {
         //Config
-
-        public static List<Room> RoomMap = new List<Room>();
         public static List<Monster> MonsterList = new List<Monster>();
         public static List<int> EscapePodLocations = new List<int>();
-
-        public const int NUMBER_OF_ROOMS = 9;
+        public static List<Room> RoomMap = new List<Room>();
+        
         public const int NUMBER_OF_MONSTERS = 3;
         public const int NUMBER_OF_ESCAPE_PODS = 1;
+        public const int NUMBER_OF_ROOMS = 9;
 
         static World()
         {
@@ -33,7 +32,7 @@ namespace engine
             {
                 MonsterList.Add(new Monster(100,i));
             }
-
+            Console.WriteLine(MonsterList);
         }
         private static void populateEscapePodLocations() 
         {
@@ -45,13 +44,17 @@ namespace engine
             {
                 EscapePodLocations.Add(random.Next(8));
             }
-
+            Console.WriteLine(EscapePodLocations);
         }
         private static void populateRoomMap() { 
         
             RoomMap.Clear();
 
-
+            for (int i = 0; i < NUMBER_OF_ROOMS; i++)
+            {
+                RoomMap.Add(new Room("Room_" + i,null, false));
+            }
+            Console.WriteLine(RoomMap);
         }
     }
 }  
