@@ -32,7 +32,6 @@ namespace engine
             {
                 MonsterList.Add(new Monster(100,i));
             }
-            Console.WriteLine(MonsterList);
         }
         private static void populateEscapePodLocations() 
         {
@@ -44,7 +43,6 @@ namespace engine
             {
                 EscapePodLocations.Add(random.Next(8));
             }
-            Console.WriteLine(EscapePodLocations);
         }
         private static void populateRoomMap() { 
         
@@ -54,7 +52,6 @@ namespace engine
             {
                 RoomMap.Add(new Room("Room_" + i,null, false));
             }
-            Console.WriteLine(RoomMap);
         }
     }
 }  

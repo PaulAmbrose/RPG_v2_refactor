@@ -21,9 +21,7 @@ namespace RPG_v2_refactor
 
             oxygenLevel.Text = _PlayerNumber1.OxygenLevel.ToString() + "%";
             suitIntegrity.Text = _PlayerNumber1.SuitIntegrity.ToString() + "%";
-
-            World.PopulateRooms();
-            actionWindow.Text = World.RoomMap.ToString();
+            
         }
     }
 }
