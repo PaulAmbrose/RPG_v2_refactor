@@ -25,18 +25,33 @@ namespace engine
             populateRoomMap();
         }
 
-        private static void populateMonsterList (){
-        
+        private static void populateMonsterList ()
+        {
             MonsterList.Clear();
         
             for (int i = 0; i < NUMBER_OF_MONSTERS; i++) 
-            { 
-                //create a monster
-                //add to MonsterList
+            {
+                MonsterList.Add(new Monster(100,i));
             }
 
         }
-        private static void populateEscapePodLocations() { }
-        private static void populateRoomMap() { }
+        private static void populateEscapePodLocations() 
+        {
+            EscapePodLocations.Clear();
+
+            Random random = new Random();
+            
+            for (int i = 0; i < NUMBER_OF_ESCAPE_PODS; i++)
+            {
+                EscapePodLocations.Add(random.Next(8));
+            }
+
+        }
+        private static void populateRoomMap() { 
+        
+            RoomMap.Clear();
+
+
+        }
     }
 }  
