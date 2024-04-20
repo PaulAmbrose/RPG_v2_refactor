@@ -22,6 +22,8 @@ namespace engine
             CurrentLocation = currentLocation;
             InFight = inFight;
             WithEscapePod = withEscapePod;
+
+
         }
     }
 }

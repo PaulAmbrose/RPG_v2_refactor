@@ -17,6 +17,7 @@ namespace engine
         public const int NUMBER_OF_ESCAPE_PODS = 1;
         public const int NUMBER_OF_ROOMS = 9;
 
+        //Constructor
         static World()
         {
             populateMonsterList();
@@ -24,6 +25,7 @@ namespace engine
             populateRoomMap();
         }
 
+        //Methods
         private static void populateMonsterList ()
         {
             MonsterList.Clear();

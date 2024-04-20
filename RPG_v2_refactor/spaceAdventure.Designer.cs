@@ -37,7 +37,7 @@
             this.rightButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
             this.leftButton = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.outPutScreen = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // oxygenLevel
@@ -119,20 +119,20 @@
             this.leftButton.Text = "left";
             this.leftButton.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // outPutScreen
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(48, 38);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(585, 295);
-            this.richTextBox1.TabIndex = 10;
-            this.richTextBox1.Text = "";
+            this.outPutScreen.Location = new System.Drawing.Point(48, 38);
+            this.outPutScreen.Name = "outPutScreen";
+            this.outPutScreen.Size = new System.Drawing.Size(585, 295);
+            this.outPutScreen.TabIndex = 10;
+            this.outPutScreen.Text = "";
             // 
             // spaceAdventure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 651);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.outPutScreen);
             this.Controls.Add(this.leftButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.rightButton);
@@ -160,7 +160,7 @@
         private System.Windows.Forms.Button rightButton;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button leftButton;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox outPutScreen;
     }
 }
 
