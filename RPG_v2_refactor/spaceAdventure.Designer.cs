@@ -82,6 +82,7 @@
             this.FIRE.TabIndex = 4;
             this.FIRE.Text = "fire";
             this.FIRE.UseVisualStyleBackColor = true;
+            this.FIRE.Click += new System.EventHandler(this.FIRE_Click);
             // 
             // forwardsButton
             // 
@@ -91,6 +92,7 @@
             this.forwardsButton.TabIndex = 5;
             this.forwardsButton.Text = "forwards";
             this.forwardsButton.UseVisualStyleBackColor = true;
+            this.forwardsButton.Click += new System.EventHandler(this.forwardsButton_Click);
             // 
             // rightButton
             // 
@@ -100,6 +102,7 @@
             this.rightButton.TabIndex = 6;
             this.rightButton.Text = "right";
             this.rightButton.UseVisualStyleBackColor = true;
+            this.rightButton.Click += new System.EventHandler(this.rightButton_Click);
             // 
             // backButton
             // 
@@ -109,6 +112,7 @@
             this.backButton.TabIndex = 7;
             this.backButton.Text = "back";
             this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // leftButton
             // 
@@ -118,6 +122,7 @@
             this.leftButton.TabIndex = 8;
             this.leftButton.Text = "left";
             this.leftButton.UseVisualStyleBackColor = true;
+            this.leftButton.Click += new System.EventHandler(this.leftButton_Click);
             // 
             // outputScreen
             // 
