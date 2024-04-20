@@ -12,21 +12,22 @@ namespace engine
         //Config
         public static List<Monster> MonsterList = new List<Monster>();
         public static List<int> EscapePodLocations = new List<int>();
-        public static List<Room> RoomMap = new List<Room>();
         
         public const int NUMBER_OF_MONSTERS = 3;
         public const int NUMBER_OF_ESCAPE_PODS = 1;
-        public const int NUMBER_OF_ROOMS = 9;
+        public const int NUMBER_OF_ROOMS_X = 3;
+        public const int NUMBER_OF_ROOMS_Y = 3;
         public const int PLAYERS_STARTING_OXYGEN = 100;
         public const int PLAYERS_STARTING_SUITINTEGRITY = 100;
-        public const string PLAYERS_STARTING_ROOM = "Room_1";
+        public const int PLAYERS_STARTING_ROOM_X = 0;
+        public const int PLAYERS_STARTING_ROOM_Y = 0;
 
         //Constructor
         static World()
         {
             populateMonsterList();
             populateEscapePodLocations();
-            populateRoomMap();
+            populateRoomMap(NUMBER_OF_ROOMS_X, NUMBER_OF_ROOMS_Y);
         }
 
         //Methods
@@ -50,14 +51,15 @@ namespace engine
                 EscapePodLocations.Add(random.Next(8));
             }
         }
-        private static void populateRoomMap() { 
-        
-            RoomMap.Clear();
+        public static void populateRoomMap(int RoomsWide_x, int RoomsDeep_y) {
 
-            for (int i = 0; i < NUMBER_OF_ROOMS; i++)
+            int[,] Create2DArray(int x, int y)
             {
-                RoomMap.Add(new Room("Room_" + i,null, false));
+                int[,] array2D = new int[y, x];
+                return array2D;
             }
+            int[,]RoomMap = Create2DArray(RoomsWide_x, RoomsDeep_y);
+
         }
     }
 }  

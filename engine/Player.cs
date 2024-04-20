@@ -11,19 +11,18 @@ namespace engine
     {
         public int OxygenLevel { get; set; }
         public int SuitIntegrity { get; set; }
-        public string CurrentLocation { get; set; }
+        public int CurrentLocation_x { get; set; }
+        public int CurrentLocation_y { get; set; }
         public bool InFight { get; set; }
         public bool WithEscapePod { get; set; }
 
-        public Player(int oxygenLevel, int suitIntegrity, string currentLocation, bool inFight, bool withEscapePod)
+        public Player(int oxygenLevel, int suitIntegrity, int currentLocation_x, int currentLocation_Y, bool inFight, bool withEscapePod)
         {
             OxygenLevel = oxygenLevel;
             SuitIntegrity = suitIntegrity;
-            CurrentLocation = currentLocation;
+            CurrentLocation_x = currentLocation_x;
             InFight = inFight;
             WithEscapePod = withEscapePod;
-
-
         }
     }
 }
