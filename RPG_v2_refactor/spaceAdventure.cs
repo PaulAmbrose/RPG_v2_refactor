@@ -17,22 +17,28 @@ namespace RPG_v2_refactor
         public spaceAdventure()
         {
             InitializeComponent();
+
             _PlayerNumber1 = new Player(200, 200, "Room1", false, false);
             updateOxygenLevelOnScreen(_PlayerNumber1.OxygenLevel);
             updatePlayerSuitIntegrityOnScreen(_PlayerNumber1.SuitIntegrity);
-            
+            updatePlayersCurrentRoomOnScreen(_PlayerNumber1.CurrentLocation);
 
 
         }
 
         private void updateOxygenLevelOnScreen(int oxyGenLevel) 
         {
-            oxygenLevel.Text = _PlayerNumber1.OxygenLevel.ToString() + "%";
+            oxygenLevel.Text = oxyGenLevel.ToString() + "%";
         }
 
         private void updatePlayerSuitIntegrityOnScreen(int suitIntegrityPercent)
         {
-            suitIntegrity.Text = _PlayerNumber1.SuitIntegrity.ToString() + "%";
+            suitIntegrity.Text = suitIntegrityPercent.ToString() + "%";
+        }
+
+        private void updatePlayersCurrentRoomOnScreen(string room)
+        {
+            outputScreen.Text = "Welcome to the spacestation, you are in " + room.ToString();
         }
 
     }
