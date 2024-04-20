@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +17,9 @@ namespace engine
         public const int NUMBER_OF_MONSTERS = 3;
         public const int NUMBER_OF_ESCAPE_PODS = 1;
         public const int NUMBER_OF_ROOMS = 9;
+        public const int PLAYERS_STARTING_OXYGEN = 100;
+        public const int PLAYERS_STARTING_SUITINTEGRITY = 100;
+        public const string PLAYERS_STARTING_ROOM = "Room_1";
 
         //Constructor
         static World()

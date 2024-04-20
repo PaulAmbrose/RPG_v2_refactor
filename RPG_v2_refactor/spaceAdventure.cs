@@ -18,12 +18,14 @@ namespace RPG_v2_refactor
         {
             InitializeComponent();
 
-            _PlayerNumber1 = new Player(200, 200, "Room1", false, false);
+            _PlayerNumber1 = new Player(World.PLAYERS_STARTING_OXYGEN, 
+                                        World.PLAYERS_STARTING_SUITINTEGRITY, 
+                                        World.PLAYERS_STARTING_ROOM, 
+                                        false, 
+                                        false);
             updateOxygenLevelOnScreen(_PlayerNumber1.OxygenLevel);
             updatePlayerSuitIntegrityOnScreen(_PlayerNumber1.SuitIntegrity);
             updatePlayersCurrentRoomOnScreen(_PlayerNumber1.CurrentLocation);
-
-
         }
 
         private void updateOxygenLevelOnScreen(int oxyGenLevel) 
@@ -38,7 +40,7 @@ namespace RPG_v2_refactor
 
         private void updatePlayersCurrentRoomOnScreen(string room)
         {
-            outputScreen.Text = "Welcome to the spacestation, you are in " + room.ToString();
+            outputScreen.Text = "Welcome to the space station, you are in " + room.ToString();
         }
 
     }
