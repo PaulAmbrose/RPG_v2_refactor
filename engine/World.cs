@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,8 @@ namespace engine
         //Config
         public static List<Monster> MonsterList = new List<Monster>();
         public static List<int> EscapePodLocations = new List<int>();
-        
+        public static int[,] RoomMap;
+
         public const int NUMBER_OF_MONSTERS = 3;
         public const int NUMBER_OF_ESCAPE_PODS = 1;
         public const int NUMBER_OF_ROOMS_X = 3;
@@ -27,7 +29,7 @@ namespace engine
         {
             populateMonsterList();
             populateEscapePodLocations();
-            populateRoomMap(NUMBER_OF_ROOMS_X, NUMBER_OF_ROOMS_Y);
+            populateRoomMap(NUMBER_OF_ROOMS_X, NUMBER_OF_ROOMS_Y, RoomMap);
         }
 
         //Methods
@@ -51,14 +53,14 @@ namespace engine
                 EscapePodLocations.Add(random.Next(8));
             }
         }
-        public static void populateRoomMap(int RoomsWide_x, int RoomsDeep_y) {
+        public static void populateRoomMap(int RoomsWide_x, int RoomsDeep_y, int[,] MyArray) {
 
             int[,] Create2DArray(int x, int y)
             {
                 int[,] array2D = new int[y, x];
                 return array2D;
             }
-            int[,]RoomMap = Create2DArray(RoomsWide_x, RoomsDeep_y);
+            MyArray = Create2DArray(RoomsWide_x, RoomsDeep_y);
 
         }
     }

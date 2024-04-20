@@ -16,11 +16,12 @@ namespace engine
         public bool InFight { get; set; }
         public bool WithEscapePod { get; set; }
 
-        public Player(int oxygenLevel, int suitIntegrity, int currentLocation_x, int currentLocation_Y, bool inFight, bool withEscapePod)
+        public Player(int oxygenLevel, int suitIntegrity, int currentLocation_x, int currentLocation_y, bool inFight, bool withEscapePod)
         {
             OxygenLevel = oxygenLevel;
             SuitIntegrity = suitIntegrity;
             CurrentLocation_x = currentLocation_x;
+            CurrentLocation_x = currentLocation_y;
             InFight = inFight;
             WithEscapePod = withEscapePod;
         }
