@@ -21,7 +21,7 @@ namespace engine
         public const int NUMBER_OF_ROOMS_Y = 3;
         public const int PLAYERS_STARTING_OXYGEN = 100;
         public const int PLAYERS_STARTING_SUITINTEGRITY = 100;
-        public const int PLAYERS_STARTING_ROOM_X = 0;
+        public const int PLAYERS_STARTING_ROOM_X = 1;
         public const int PLAYERS_STARTING_ROOM_Y = 0;
 
         //Constructor

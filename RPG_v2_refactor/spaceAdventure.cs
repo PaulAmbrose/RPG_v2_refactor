@@ -41,7 +41,7 @@ namespace RPG_v2_refactor
 
         private void updatePlayersCurrentRoomOnScreen(int x, int y)
         {
-            //outputScreen.Text = World.RoomMap[0,0].ToString();
+            outputScreen.Text = "You are in room " + World.RoomMap[_PlayerNumber1.CurrentLocation_x, _PlayerNumber1.CurrentLocation_y].ToString();
         }
 
         private void forwardsButton_Click(object sender, EventArgs e)
