@@ -25,11 +25,11 @@ namespace engine
         public const int PLAYERS_STARTING_ROOM_Y = 0;
 
         //Constructor
-        static World()
+        public static void WorldCreation()
         {
             populateMonsterList();
             populateEscapePodLocations();
-            populateRoomMap(NUMBER_OF_ROOMS_X, NUMBER_OF_ROOMS_Y, RoomMap);
+            PopulateRoomMap(NUMBER_OF_ROOMS_X, NUMBER_OF_ROOMS_Y);
         }
 
         //Methods
@@ -53,15 +53,19 @@ namespace engine
                 EscapePodLocations.Add(random.Next(8));
             }
         }
-        public static void populateRoomMap(int RoomsWide_x, int RoomsDeep_y, int[,] MyArray) {
+        public static void PopulateRoomMap(int roomsWide, int roomsHigh)
+        {
+            int[,] roomMap = new int[roomsWide, roomsHigh];
+            int roomCounter = 0;
 
-            int[,] Create2DArray(int x, int y)
+            for (int width = 0; width < roomsWide; width++)
             {
-                int[,] array2D = new int[y, x];
-                return array2D;
+                for (int height = 0; height < roomsHigh; height++) 
+                {
+                    roomMap[width, height] = roomCounter;
+                    roomCounter++;
+                }
             }
-            MyArray = Create2DArray(RoomsWide_x, RoomsDeep_y);
-
         }
     }
 }  

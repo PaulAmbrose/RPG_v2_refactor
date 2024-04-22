@@ -17,7 +17,7 @@ namespace RPG_v2_refactor
         public spaceAdventure()
         {
             InitializeComponent();
-
+            World.WorldCreation();
             _PlayerNumber1 = new Player(World.PLAYERS_STARTING_OXYGEN,
                                         World.PLAYERS_STARTING_SUITINTEGRITY,
                                         World.PLAYERS_STARTING_ROOM_X,
@@ -27,8 +27,6 @@ namespace RPG_v2_refactor
             updateOxygenLevelOnScreen(_PlayerNumber1.OxygenLevel);
             updatePlayerSuitIntegrityOnScreen(_PlayerNumber1.SuitIntegrity);
             updatePlayersCurrentRoomOnScreen(World.PLAYERS_STARTING_ROOM_X, World.PLAYERS_STARTING_ROOM_Y);
-
-
         }
 
         private void updateOxygenLevelOnScreen(int oxyGenLevel)
@@ -43,7 +41,7 @@ namespace RPG_v2_refactor
 
         private void updatePlayersCurrentRoomOnScreen(int x, int y)
         {
-            outputScreen.Text = outputScreen.Text + "You are in " + room.ToString() + "\n";
+            //outputScreen.Text = World.RoomMap[0,0].ToString();
         }
 
         private void forwardsButton_Click(object sender, EventArgs e)
@@ -72,7 +70,7 @@ namespace RPG_v2_refactor
         }
         private void movePlayerTo(int currentLocation, int newLocation)
         {
-            updatePlayersCurrentRoomOnScreen(_PlayerNumber1.CurrentLocation);
+            
         }
 
     }
