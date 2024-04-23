@@ -30,7 +30,6 @@ namespace engine
         {
             populateMonsterList();
             populateEscapePodLocations();
-            PopulateRoomMap(NUMBER_OF_ROOMS_X, NUMBER_OF_ROOMS_Y);
         }
 
         //Methods
