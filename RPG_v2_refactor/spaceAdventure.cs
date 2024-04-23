@@ -26,7 +26,7 @@ namespace RPG_v2_refactor
                                         false);
             updateOxygenLevelOnScreen(_PlayerNumber1.OxygenLevel);
             updatePlayerSuitIntegrityOnScreen(_PlayerNumber1.SuitIntegrity);
-            updatePlayersCurrentRoomOnScreen(World.PLAYERS_STARTING_ROOM_X, World.PLAYERS_STARTING_ROOM_Y);
+            updatePlayersCurrentRoomOnScreen();
         }
 
         private void updateOxygenLevelOnScreen(int oxyGenLevel)
@@ -39,9 +39,9 @@ namespace RPG_v2_refactor
             suitIntegrity.Text = suitIntegrityPercent.ToString() + "%";
         }
 
-        private void updatePlayersCurrentRoomOnScreen(int x, int y)
+        public void updatePlayersCurrentRoomOnScreen()
         {
-            outputScreen.Text = "You are in room " + (World.RoomMap[_PlayerNumber1.CurrentLocation_x, _PlayerNumber1.CurrentLocation_y]).ToString();
+            outputScreen.Text = "You are in room " + World.RoomMap[_PlayerNumber1.CurrentLocation_x, _PlayerNumber1.CurrentLocation_y].ToString();
         }
 
         private void forwardsButton_Click(object sender, EventArgs e)

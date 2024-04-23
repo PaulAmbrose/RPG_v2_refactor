@@ -21,7 +21,7 @@ namespace engine
             OxygenLevel = oxygenLevel;
             SuitIntegrity = suitIntegrity;
             CurrentLocation_x = currentLocation_x;
-            CurrentLocation_x = currentLocation_y;
+            CurrentLocation_y = currentLocation_y;
             InFight = inFight;
             WithEscapePod = withEscapePod;
         }
